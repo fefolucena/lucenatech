@@ -1,3 +1,4 @@
+import { AboutMe } from "../../components/AboutMe/AboutMe";
 import { Author } from "../../components/Author/Author";
 import { Education } from "../../components/Education/Education";
 import { Experiences } from "../../components/Experiences/Experiences";
@@ -36,12 +37,7 @@ export const Curriculum = () => {
             </TabList>
             <TabPanels>
               <TabPanel>
-                <p>
-                  Estudante de Sistemas para Internet no IFRS. Atualmente
-                  atuando como Desenvolvedor Fullstack. Sou comunicativo,
-                  objetivo, me adapto à diversas situações novas, busco inovar e
-                  gosto de resolver problemas.
-                </p>
+                <AboutMe />
               </TabPanel>
               <TabPanel>
                 <Experiences />
