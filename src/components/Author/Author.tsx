@@ -1,4 +1,4 @@
-import { AbsoluteCenter, Box, Divider, Image, Text } from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
 
 export const Author = () => {
   return (

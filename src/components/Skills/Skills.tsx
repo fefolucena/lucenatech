@@ -1,5 +1,5 @@
 import { ArrowForwardIcon } from "@chakra-ui/icons";
-import { Box, Divider, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+import { Box, Divider, Text } from "@chakra-ui/react";
 
 
 export const Skills = () => {
