@@ -1,61 +1,30 @@
+import { ArrowForwardIcon } from "@chakra-ui/icons";
+import { Box, Divider, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+
 
 export const Skills = () => {
   return (
-    <div className="main-container d-flex justify-content-center align-items-center">
-      <div className="main-card">
-        <div className="main-title d-flex justify-content-center align-items-center">
-          <h2>Habilidades</h2>
-        </div>
-        <div className="experiences-list">
-          <div className="experience">
-            <h3>Linguagens de programação, banco de dados e estilos</h3>
-            <ul>
-              <li>
-                <span>Javascript (Node.js, React e Angular)</span>
-              </li>
-              <li>
-                <span>MySQL e MongoDB</span>
-              </li>
-              <li>
-                <span>HTML, CSS e Bootstrap</span>
-              </li>
-              <li>
-                <span>PHP (Laravel)</span>
-              </li>
-            </ul>
-          </div>
-          <hr />
-          <div className="experience">
-            <h3>Metodologias ágeis</h3>
-            <ul>
-              <li>
-                <span>Scrum</span>
-              </li>
-              <li>
-                <span>Kanban</span>
-              </li>
-              <li>
-                <span>Lean</span>
-              </li>
-            </ul>
-          </div>
-          <hr />
-          <div className="experience">
-            <h3>Idiomas</h3>
-            <ul>
-              <li>
-                <span>Inglês (avançado)</span>
-              </li>
-              <li>
-                <span>Espanhol (intermediário)</span>
-              </li>
-              <li>
-                <span>Libras (básico)</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    <>
+      <Box>
+        <Text fontSize="2xl">
+          Linguagens de programação, banco de dados e estilos
+        </Text>
+          <Text><ArrowForwardIcon />{''}Javascript (Node.js, React e Angular)</Text>
+          <Text><ArrowForwardIcon />{''}MySQL e MongoDB</Text>
+          <Text><ArrowForwardIcon />{''}HTML, CSS e Bootstrap</Text>
+          <Text><ArrowForwardIcon />{''}PHP (Laravel)</Text>
+        <Divider />
+        <Text fontSize="2xl">Metodologias ágeis</Text>
+          <Text><ArrowForwardIcon />{''}Scrum</Text>
+          <Text><ArrowForwardIcon />{''}Kanban</Text>
+          <Text><ArrowForwardIcon />{''}Lean</Text>
+        <Divider />
+        <Text fontSize="2xl">Idiomas</Text>
+          <Text><ArrowForwardIcon />{''}Inglês (avançado)</Text>
+          <Text><ArrowForwardIcon />{''}Espanhol (intermediário)</Text>
+          <Text><ArrowForwardIcon />{''}Libras (básico)</Text>
+        <Divider />
+      </Box>
+    </>
   );
 };
