@@ -21,13 +21,12 @@ export const Curriculum = () => {
         <Author />
       </Center>
       <Center>
-        <Center border={"1px solid blue"} width="80%" margin="5px">
+        <Center width="80%" margin="5px">
           <Tabs
             isFitted
             align="center"
             variant="enclosed"
             width="90%"
-            border={"1px solid green"}
           >
             <TabList mb="1em">
               <Tab>Sobre mim</Tab>
