@@ -1,5 +1,3 @@
-// import "./style.css"
-
 import { Box, Card, CardBody, Center, Heading, Image } from "@chakra-ui/react";
 
 export const ServiceDetails = () => {
@@ -25,8 +23,9 @@ export const ServiceDetails = () => {
               </Box>
               <Center width={{ base: "100%", md: "40%" }}>
                 <Image
-                  src="../../assets/images/services.png"
-                  alt="Dan Abramov"
+                  src="../../assets/images/ecommerce.jpeg"
+                  alt="Imagem de pessoa mexendo em um celular"
+                  boxSize='350px'
                 />
               </Center>
             </Center>
@@ -56,8 +55,9 @@ export const ServiceDetails = () => {
               </Box>
               <Center width={{ base: "100%", md: "40%" }}>
                 <Image
-                  src="../../assets/images/services.png"
-                  alt="Dan Abramov"
+                  src="../../assets/images/growth.jpeg"
+                  alt="Pessoa segurando uma caneta apontando para uma folha com gráficos"
+                  boxSize='350px'
                 />
               </Center>
             </Center>
@@ -87,8 +87,9 @@ export const ServiceDetails = () => {
               </Box>
               <Center width={{ base: "100%", md: "40%" }}>
                 <Image
-                  src="../../assets/images/services.png"
-                  alt="Dan Abramov"
+                  src="../../assets/images/dev.jpeg"
+                  alt="Pessoa mexendo em um computador que apresenta códigos de programação"
+                  boxSize='350px'
                 />
               </Center>
             </Center>
@@ -118,8 +119,9 @@ export const ServiceDetails = () => {
               </Box>
               <Center width={{ base: "100%", md: "40%" }}>
                 <Image
-                  src="../../assets/images/services.png"
-                  alt="Dan Abramov"
+                  src="../../assets/images/managing.png"
+                  alt="Pessoa gerente fazendo uma apresentação num quadro branco"
+                  boxSize='350px'
                 />
               </Center>
             </Center>

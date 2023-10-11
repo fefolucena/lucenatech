@@ -1,22 +1,16 @@
-// import "./style.css"
-
-import { QuestionIcon } from "@chakra-ui/icons";
 import {
-    Box,
-    Button,
-    Card,
-    CardBody,
-    CardFooter,
-    CardHeader,
-    Center,
-    Heading,
-    Image,
-    SimpleGrid,
-    Text,
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  Center,
+  Heading,
+  Image,
+  SimpleGrid,
+  Text,
 } from "@chakra-ui/react";
-//import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import { Header } from "../../components/Header/Header";
 
 export const ProvidedServices = () => {
   return (
@@ -31,13 +25,13 @@ export const ProvidedServices = () => {
           >
             <Card>
               <CardHeader>
-                <QuestionIcon boxSize="10" />
+                <Image src="../../assets/icons/ecommerce.png" alt="Ícone de um computador" boxSize="10" />
                 <Heading size="md">
                   Implementação e consultoria E-commerce
                 </Heading>
               </CardHeader>
               <CardBody>
-                <Text>
+                <Text textAlign="left">
                   Com experiência sólida em desenvolvimento de e-commerce,
                   podemos te ajudar a transformar sua visão em realidade. Seja
                   construindo do zero ou otimizando sua plataforma existente!
@@ -51,7 +45,7 @@ export const ProvidedServices = () => {
             </Card>
             <Card>
               <CardHeader>
-                <QuestionIcon boxSize="10" />
+                <Image src="../../assets/icons/growth.png" alt="Ícone de um gráfico apontando para cima" boxSize="10" />
                 <Heading size="md">Growth</Heading>
               </CardHeader>
               <CardBody>
@@ -72,7 +66,7 @@ export const ProvidedServices = () => {
             </Card>
             <Card>
               <CardHeader>
-                <QuestionIcon boxSize="10" />
+                <Image src="../../assets/icons/dev.png" alt="Ícone de um computador e engrenagens" boxSize="10" />
                 <Heading size="md">Desenvolvimento web</Heading>
               </CardHeader>
               <CardBody>
@@ -92,7 +86,7 @@ export const ProvidedServices = () => {
             </Card>
             <Card>
               <CardHeader>
-                <QuestionIcon boxSize="10" />
+                <Image src="../../assets/icons/management.png" alt="Ícone apresentando uma mulher com um gráfico apontando para cima" boxSize="10" />
                 <Heading size="md">
                   Gerenciamento de Projetos Tecnológicos
                 </Heading>

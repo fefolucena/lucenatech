@@ -17,7 +17,7 @@ export const Footer = () => {
       </div>
       <div className="footer-bottom">
         <p>
-          copyright &copy; <a href="#">Lucena Tecnologia</a> - CNPJ:
+          copyright &copy; Lucena Tecnologia - CNPJ:
           49.831.347/0001-75
         </p>
       </div>
