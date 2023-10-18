@@ -13,6 +13,7 @@ import {
   UnorderedList,
 } from "@chakra-ui/react";
 import React from "react";
+import { Contact } from "../Contact/Contact";
 
 interface GrowthServiceProps {
   isOpen: boolean;
@@ -65,7 +66,7 @@ const GrowthService: React.FC<GrowthServiceProps> = ({ isOpen, onClose }) => {
           <Button colorScheme="blue" mr={3} onClick={onClose}>
             Fechar
           </Button>
-          <Button colorScheme="teal">Entrar em contato</Button>
+          <Contact />
         </ModalFooter>
       </ModalContent>
     </Modal>
