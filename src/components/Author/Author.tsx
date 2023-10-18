@@ -7,7 +7,7 @@ export const Author = () => {
         <Image
           borderRadius="full"
           boxSize="200px"
-          src="../../../assets/images/profile.jpg"
+          src="../../../assets/images/profile-sq.jpg"
           alt="Foto de perfil Cesar de Lucena"
         />
       </Box>
