@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="footer-content">
         <h3>Lucena Tecnologia</h3>
         <p>Transformando ideias em resultados.</p>
-        <a href="https://github.com/fefolucena">
+        <a href="https://github.com/fefolucena/lucenatech">
           <Image
             borderRadius="full"
             boxSize="70px"

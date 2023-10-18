@@ -5,11 +5,12 @@ export const Header = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <a className="navbar-brand" href="/">
-          <Image
+          {/* <Image
             src="../../assets/images/logo.png"
             alt="Logo da empresa Lucena Tecnologia transformando ideias em resultados"
             width="150px"
-          />
+          /> */}
+          Lucena Tecnologia
         </a>
         <button
           className="navbar-toggler"
