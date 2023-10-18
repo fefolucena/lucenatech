@@ -1,4 +1,4 @@
-import { Image } from "@chakra-ui/react";
+import { Center, Image } from "@chakra-ui/react";
 
 export const Footer = () => {
   return (
@@ -9,17 +9,14 @@ export const Footer = () => {
         <a href="https://github.com/fefolucena">
           <Image
             borderRadius="full"
-            boxSize="100px"
+            boxSize="70px"
             src="../../assets/images/github.svg"
             alt="Github link"
           />
         </a>
       </div>
       <div className="footer-bottom">
-        <p>
-          copyright &copy; Lucena Tecnologia - CNPJ:
-          49.831.347/0001-75
-        </p>
+        <Center><p>copyright &copy; Lucena Tecnologia - CNPJ: 49.831.347/0001-75</p></Center>
       </div>
     </footer>
   );

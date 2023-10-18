@@ -34,7 +34,7 @@ export const Header = () => {
                 Sobre mim
               </a>
             </li>
-            <li className="nav-item dropdown">
+            {/* <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
                 id="navbarDropdown"
@@ -68,7 +68,7 @@ export const Header = () => {
                   </a>
                 </li>
               </ul>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
