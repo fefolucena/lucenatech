@@ -2,7 +2,7 @@ import { Image } from "@chakra-ui/react";
 
 export const Footer = () => {
   return (
-    <footer>
+    <footer className="footer-container">
       <div className="footer-content">
         <h3>Lucena Tecnologia</h3>
         <p>Transformando ideias em resultados.</p>

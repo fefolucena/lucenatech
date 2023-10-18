@@ -11,9 +11,36 @@ import {
   SimpleGrid,
   Text,
 } from "@chakra-ui/react";
-import { Link as ScrollLink } from "react-scroll";
+import { useState } from "react";
+import ConsultingService from "../ConsultingService/ConsultingService";
+import GrowthService from "../GrowthService/Growth";
+import ProjectManagingService from "../ProjectManagingService/ProjectManagingService";
+import WebDevelopmentService from "../WebDevelopmentService/WebDevelopmentService";
 
 export const ProvidedServices = () => {
+  const [isConsultingServiceOpen, setConsultingServiceOpen] = useState(false);
+  const [isGrowthServiceOpen, setGrowthServiceOpen] = useState(false);
+  const [isWebDevelopmentServiceOpen, setWebDevelopmentServiceOpen] =
+    useState(false);
+  const [isProjectManagingServiceOpen, setProjectManagingServiceOpen] =
+    useState(false);
+
+  const openConsultingService = () => {
+    setConsultingServiceOpen(true);
+  };
+
+  const openGrowthService = () => {
+    setGrowthServiceOpen(true);
+  };
+
+  const openWebDevelopmentService = () => {
+    setWebDevelopmentServiceOpen(true);
+  };
+
+  const openProjectManagingService = () => {
+    setProjectManagingServiceOpen(true);
+  };
+
   return (
     <>
       <Center marginTop="20px">
@@ -30,7 +57,7 @@ export const ProvidedServices = () => {
                 <CardHeader>
                   <Image
                     src="../../assets/icons/ecommerce.png"
-                    alt="Ícone de um computador"
+                    alt=""
                     boxSize="10"
                   />
                   <Heading size="md">Consultoria E-commerce</Heading>
@@ -47,9 +74,13 @@ export const ProvidedServices = () => {
                 </Text>
               </CardBody>
               <CardFooter>
-                <ScrollLink to="service1" smooth={true} duration={500}>
-                  <Button>Saiba mais</Button>
-                </ScrollLink>
+                <Button onClick={openConsultingService}>Saiba mais</Button>
+                {isConsultingServiceOpen && (
+                  <ConsultingService
+                    isOpen={isConsultingServiceOpen}
+                    onClose={() => setConsultingServiceOpen(false)}
+                  />
+                )}
               </CardFooter>
             </Card>
             <Card>
@@ -57,7 +88,7 @@ export const ProvidedServices = () => {
                 <CardHeader>
                   <Image
                     src="../../assets/icons/growth.png"
-                    alt="Ícone de um gráfico apontando para cima"
+                    alt=""
                     boxSize="10"
                   />
                   <Heading size="md">Growth</Heading>
@@ -74,20 +105,20 @@ export const ProvidedServices = () => {
                 </Text>
               </CardBody>
               <CardFooter>
-                <ScrollLink to="service2" smooth={true} duration={500}>
-                  <Button>Saiba mais</Button>
-                </ScrollLink>
+                <Button onClick={openGrowthService}>Saiba mais</Button>
+                {isGrowthServiceOpen && (
+                  <GrowthService
+                    isOpen={isGrowthServiceOpen}
+                    onClose={() => setGrowthServiceOpen(false)}
+                  />
+                )}
               </CardFooter>
             </Card>
             <Card>
               <Box minHeight="130px">
                 <CardHeader>
-                  <Image
-                    src="../../assets/icons/dev.png"
-                    alt="Ícone de um computador e engrenagens"
-                    boxSize="10"
-                  />
-                  <Heading size="md">Desenvolvimento web</Heading>
+                  <Image src="../../assets/icons/dev.png" alt="" boxSize="10" />
+                  <Heading size="md">Desenvolvimento Web</Heading>
                 </CardHeader>
               </Box>
               <CardBody>
@@ -100,9 +131,13 @@ export const ProvidedServices = () => {
                 </Text>
               </CardBody>
               <CardFooter>
-                <ScrollLink to="service3" smooth={true} duration={500}>
-                  <Button>Saiba mais</Button>
-                </ScrollLink>
+                <Button onClick={openWebDevelopmentService}>Saiba mais</Button>
+                {isWebDevelopmentServiceOpen && (
+                  <WebDevelopmentService
+                    isOpen={isWebDevelopmentServiceOpen}
+                    onClose={() => setWebDevelopmentServiceOpen(false)}
+                  />
+                )}
               </CardFooter>
             </Card>
             <Card>
@@ -110,7 +145,7 @@ export const ProvidedServices = () => {
                 <CardHeader>
                   <Image
                     src="../../assets/icons/management.png"
-                    alt="Ícone apresentando uma mulher com um gráfico apontando para cima"
+                    alt=""
                     boxSize="10"
                   />
                   <Heading size="md">Gerenciamento de Projetos</Heading>
@@ -126,9 +161,13 @@ export const ProvidedServices = () => {
                 </Text>
               </CardBody>
               <CardFooter>
-                <ScrollLink to="service4" smooth={true} duration={500}>
-                  <Button>Saiba mais</Button>
-                </ScrollLink>
+                <Button onClick={openProjectManagingService}>Saiba mais</Button>
+                {isProjectManagingServiceOpen && (
+                  <ProjectManagingService
+                    isOpen={isProjectManagingServiceOpen}
+                    onClose={() => setProjectManagingServiceOpen(false)}
+                  />
+                )}
               </CardFooter>
             </Card>
           </SimpleGrid>
