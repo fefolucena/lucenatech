@@ -1,7 +1,7 @@
 import { Image } from "@chakra-ui/react";
 import { Link, useLocation } from "react-router-dom";
 
-export const Header = () => {
+export const LandingPageHeader = () => {
   const location = useLocation();
 
   return (
@@ -28,18 +28,18 @@ export const Header = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link className={`nav-link ${location.pathname === "/" ? "active" : ""}`} to="/">
+            <li className={`nav-item ${location.pathname === "/" ? "active" : ""}`}>
+              <Link className="nav-link" to="/">
                 Início
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className={`nav-link ${location.pathname === "/curriculum" ? "active" : ""}`} to="/curriculum">
+            <li className={`nav-item ${location.pathname === "/curriculum" ? "active" : ""}`}>
+              <Link className="nav-link" to="/curriculum">
                 Sobre mim
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className={`nav-link ${location.pathname === "/portfolio" ? "active" : ""}`} to="/portfolio">
+            <li className={`nav-item ${location.pathname === "/portfolio" ? "active" : ""}`}>
+              <Link className="nav-link" to="/portfolio">
                 Portfólio
               </Link>
             </li>
