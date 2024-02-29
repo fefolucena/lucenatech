@@ -10,36 +10,34 @@ import {
   Image,
   SimpleGrid,
   Text,
-} from "@chakra-ui/react";
-import { useState } from "react";
-import ConsultingService from "../ConsultingService/ConsultingService";
-import GrowthService from "../GrowthService/Growth";
-import ProjectManagingService from "../ProjectManagingService/ProjectManagingService";
-import WebDevelopmentService from "../WebDevelopmentService/WebDevelopmentService";
+} from "@chakra-ui/react"
+import { useState } from "react"
+import ConsultingService from "../ConsultingService/ConsultingService"
+import GrowthService from "../GrowthService/Growth"
+import ProjectManagingService from "../ProjectManagingService/ProjectManagingService"
+import WebDevelopmentService from "../WebDevelopmentService/WebDevelopmentService"
 
 export const ProvidedServices = () => {
-  const [isConsultingServiceOpen, setConsultingServiceOpen] = useState(false);
-  const [isGrowthServiceOpen, setGrowthServiceOpen] = useState(false);
-  const [isWebDevelopmentServiceOpen, setWebDevelopmentServiceOpen] =
-    useState(false);
-  const [isProjectManagingServiceOpen, setProjectManagingServiceOpen] =
-    useState(false);
+  const [isConsultingServiceOpen, setConsultingServiceOpen] = useState(false)
+  const [isGrowthServiceOpen, setGrowthServiceOpen] = useState(false)
+  const [isWebDevelopmentServiceOpen, setWebDevelopmentServiceOpen] = useState(false)
+  const [isProjectManagingServiceOpen, setProjectManagingServiceOpen] = useState(false)
 
   const openConsultingService = () => {
-    setConsultingServiceOpen(true);
-  };
+    setConsultingServiceOpen(true)
+  }
 
   const openGrowthService = () => {
-    setGrowthServiceOpen(true);
-  };
+    setGrowthServiceOpen(true)
+  }
 
   const openWebDevelopmentService = () => {
-    setWebDevelopmentServiceOpen(true);
-  };
+    setWebDevelopmentServiceOpen(true)
+  }
 
   const openProjectManagingService = () => {
-    setProjectManagingServiceOpen(true);
-  };
+    setProjectManagingServiceOpen(true)
+  }
 
   return (
     <>
@@ -174,5 +172,5 @@ export const ProvidedServices = () => {
         </Center>
       </Center>
     </>
-  );
-};
+  )
+}

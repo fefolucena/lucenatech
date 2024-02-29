@@ -1,5 +1,3 @@
-import { Header } from "../../components/Header/Header";
-import { Footer } from "../../components/Footer/Footer";
 import {
   Button,
   ButtonGroup,
@@ -8,13 +6,18 @@ import {
   CardFooter,
   Center,
   Divider,
+  Grid,
   Heading,
-  Stack,
   Image,
+  Stack,
   Text,
   VStack,
-  Grid,
-} from "@chakra-ui/react";
+} from "@chakra-ui/react"
+import { Link } from "react-router-dom"
+import { Footer } from "../../components/Footer/Footer"
+import { Header } from "../../components/Header/Header"
+import { useState } from "react"
+import { Contact } from "../../components/Contact/Contact"
 
 export const Portfolio = () => {
   return (
@@ -33,25 +36,55 @@ export const Portfolio = () => {
               <CardBody>
                 <Image
                   src="../../assets/images/shopify_logo.png"
-                  alt="Green double couch with wooden legs"
+                  alt="Ícone da loja Shopify"
                   borderRadius="lg"
+                  height="150px"
+                  marginX="auto"
                 />
                 <Stack mt="6" spacing="3">
                   <Heading size="md">E-commerce Shopify</Heading>
                   <Text>
-                    Explore nosso potencial clicando abaixo. Quer uma loja personalizada? Conheça nossa loja de testes Shopify e descubra o que podemos criar para você.
+                    Explore nosso potencial clicando abaixo. Quer uma loja personalizada? Conheça nossa loja de testes Shopify e descubra o que podemos criar para você. (senha da loja "rehose")
                   </Text>
                 </Stack>
               </CardBody>
               <Divider />
-              <CardFooter>
+              <CardFooter marginX="auto">
                 <ButtonGroup spacing="2">
-                  <Button variant="solid" colorScheme="blue">
-                    Ver
-                  </Button>
-                  <Button variant="ghost" colorScheme="blue">
-                    Contratar
-                  </Button>
+                  <Link to="https://lucena-tech.myshopify.com" target="_blank" rel="noopener noreferrer">
+                    <Button variant="solid" colorScheme="blue">
+                      Ver
+                    </Button>
+                  </Link>
+                  <Contact />
+                </ButtonGroup>
+              </CardFooter>
+            </Card>
+            <Card maxW="sm">
+              <CardBody>
+                <Image
+                  src="../../assets/images/landing_page_logo.png"
+                  alt="Ícone da landing page"
+                  borderRadius="lg"
+                  height="150px"
+                  marginX="auto"
+                />
+                <Stack mt="6" spacing="3">
+                  <Heading size="md">Landing Page Minimalista</Heading>
+                  <Text>
+                    Descubra a essência da simplicidade com nossa Landing Page Minimalista. Navegue por um design limpo e intuitivo, mergulhando na experiência sem distrações. Aqui, todas as informações essenciais estão cuidadosamente apresentadas, sem excessos, proporcionando uma experiência fluida e focada em seu objetivo.
+                  </Text>
+                </Stack>
+              </CardBody>
+              <Divider />
+              <CardFooter marginX="auto">
+                <ButtonGroup spacing="2">
+                  <Link to="/landing-page-example" target="_blank">
+                    <Button variant="solid" colorScheme="blue">
+                      Ver
+                    </Button>
+                  </Link>
+                  <Contact />
                 </ButtonGroup>
               </CardFooter>
             </Card>
@@ -60,5 +93,5 @@ export const Portfolio = () => {
       </VStack>
       <Footer />
     </>
-  );
-};
+  )
+}
